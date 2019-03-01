@@ -12,10 +12,11 @@ TEST(NumberOfInstances, basicTest) {
   EatLots eStrategy;
   
   Animal *animal1 = new Animal("Piero", fStrategy, rStrategy, eStrategy);
+  //ASSERT_EQ(animal1->fly(), 0);
+  //animal1->fly();
+  //ASSERT_EQ(Animal::getNumberOfInstances(), 1);
   ASSERT_EQ(0, 0);
   /*
-  
-  ASSERT_EQ(Animal::getNumberOfInstances(), 1);
   Animal *animal2 = new Animal("Gino", fStrategy, rStrategy, eStrategy);
   ASSERT_EQ(Animal::getNumberOfInstances(), 2);
   delete animal1;
