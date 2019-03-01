@@ -62,6 +62,6 @@ class EatLots : public IEatable {
 class EatLittle : public IEatable {
   public:
     int eat() override {
-      return 2;
+      return 1;
     }
 };

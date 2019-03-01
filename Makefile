@@ -13,8 +13,9 @@ main: $(OBJS)
 
 gTest: test/gTestMain.cpp main.cpp $(DEPS)
 	$(CC) $(STD) -Iinclude -stdlib=libc++ -Iinclude -lgtest -pthread $< -o gTest
-
+	#g++ -std=c++11 -isystem ${GTEST_DIR}/include -I${GTEST_DIR} -pthread -c ${GTEST_DIR}/src/gtest-all.cc
+	#ar -rv libgtest.a gtest-all.o
 .PHONY: clean
 
 clean:
-	rm -f main gTest *.o src/*.o *~ core $(INCDIR)/*~ 
+	rm -f main gTest *.o *a src/*.o *~ core $(INCDIR)/*~ 

@@ -30,5 +30,6 @@ int main(int argc, char* argv[]) {
   std::cout << "test: " << genericAnimal.getNumberOfInstances() << std::endl;
 
   std::cout << "I'm leaving.." << std::endl;
+  
   return 0;
 }
